@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -aux
+ps -Ao user,uid,comm,pid,pcpu,tty --sort=-pcpu | head -n 10
